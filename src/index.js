@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ImageUpload from './ImageUpload';
 
 const App = () => {
   return(
-    <div>react app mother fucker</div>
+    <div>
+      <ImageUpload />
+    </div>
   )
 };
 
