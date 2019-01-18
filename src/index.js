@@ -8,7 +8,7 @@ const App = () => {
     <div>
       <div className="title">Deep Cell Image Rendering Prototype</div>
 
-      <ImageUpload /> 
+      <ImageUpload />
 
     </div>
   )
