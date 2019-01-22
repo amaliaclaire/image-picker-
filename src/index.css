@@ -1,47 +1,14 @@
-
-.previewComponent {
-  padding-top: 5em;
-  margin: auto;
-  width: 400px;
-  height: 200px;
-}
-
-/* photo border */
-
-div.content {
-  padding-left: 3em;
-}
-
-.imgPreview {
-  padding-bottom: 10em;
-}
-
-
-
-/* card class */
-
-.div.content {
-  margin: auto;
-
-}
-.ui.card {
-  display: block;
-  min-height: 20rem;
-  margin: auto;
-  padding: 0px;
-  text-align: center;
-}
-
-.imgPreview  {
+.input {
   background-color: pink;
-  padding-top: 3em;
 }
 
-div.ui.input.fileInput {
-  padding-top: 3em;
-}
+.fileInput {
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+
+  position: absolute;
 
 
-i {
-  text-align: center;
 }

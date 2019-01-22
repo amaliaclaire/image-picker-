@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input } from 'semantic-ui-react'
+import { Input, Grid, Segment } from 'semantic-ui-react'
 
 
 class ImageUpload extends React.Component {
@@ -43,12 +43,11 @@ class ImageUpload extends React.Component {
 
      return (
        <div className="previewComponent">
-         <form onSubmit={(e)=>this._handleSubmit(e)}>
-           <Input className="fileInput"
-             type="file"
-             onChange={(e)=>this._handleImageChange(e)} />
-          
-         </form>
+           <form onSubmit={(e)=>this._handleSubmit(e)}>
+             <Input className="fileInput text container"
+               type="file"
+               onChange={(e)=>this._handleImageChange(e)} />
+           </form>
          <div className="imgPreview">
            {$imagePreview}
          </div>
