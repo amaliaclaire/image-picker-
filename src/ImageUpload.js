@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Grid, Segment } from 'semantic-ui-react'
+import { Input, Grid, Segment, Image } from 'semantic-ui-react'
 
 
 class ImageUpload extends React.Component {
@@ -7,7 +7,7 @@ class ImageUpload extends React.Component {
     super(props);
     this.state = {
       file: '',
-      imagePreviewURL: ''
+      imagePreviewUrl: ''
     };
   }
 
@@ -23,10 +23,10 @@ class ImageUpload extends React.Component {
     let reader = new FileReader();
     let file = e.target.files[0];
 
-    reader.onLoadend = () => {
+    reader.onloadend = () => {
       this.setState({
         file: file,
-        imagePreviewURL: reader.result
+        imagePreviewUrl: reader.result
       });
     }
     reader.readAsDataURL(file)
@@ -35,6 +35,7 @@ class ImageUpload extends React.Component {
   render() {
      let {imagePreviewUrl} = this.state;
      let $imagePreview = null;
+     console.log(imagePreviewUrl);
      if (imagePreviewUrl) {
        $imagePreview = (<img src={imagePreviewUrl} />);
      } else {

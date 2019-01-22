@@ -7,8 +7,22 @@
   border-right: 4px solid black;
   border-top: 1px solid black;
   border-left: 1px solid black;
-
   position: absolute;
+}
 
+.imgPreview {
+  text-align: center;
+  margin: 5px 15px;
+  height: 200px;
+  width: 500px;
 
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+form {
+  padding-top: 3em;
+  margin: auto; 
 }

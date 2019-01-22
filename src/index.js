@@ -12,9 +12,7 @@ const App = () => {
   return(
     <div>
       <HeaderPlugIcon />
-      <GridPadded />
       <Card content=""/>
-
     </div>
   )
 };
