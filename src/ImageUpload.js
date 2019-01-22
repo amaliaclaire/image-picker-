@@ -1,4 +1,6 @@
 import React from 'react';
+import { Input } from 'semantic-ui-react'
+
 
 class ImageUpload extends React.Component {
   constructor(props) {
@@ -42,12 +44,10 @@ class ImageUpload extends React.Component {
      return (
        <div className="previewComponent">
          <form onSubmit={(e)=>this._handleSubmit(e)}>
-           <input className="fileInput"
+           <Input className="fileInput"
              type="file"
              onChange={(e)=>this._handleImageChange(e)} />
-           <button className="submitButton"
-             type="submit"
-             onClick={(e)=>this._handleSubmit(e)}>Upload Image</button>
+          
          </form>
          <div className="imgPreview">
            {$imagePreview}

@@ -1,11 +1,13 @@
 import React from 'react';
+import ImageUpload from './ImageUpload'
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div class="ui card">
-      <div class="content">
-        <div class="header">Photo Comparsion</div>
-        <div class="description">
+    <div className="ui card card-border">
+      <div className="content"> {props.content}
+        <div className="header">Photo Comparsion</div>
+        <ImageUpload />
+        <div className="description">
          <i className="upload icon"></i>
         </div>
       </div>

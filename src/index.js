@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Header, Icon } from 'semantic-ui-react'
+import HeaderPlugIcon from './HeaderPlugIcon'
 import ImageUpload from './ImageUpload';
 import Card from './Card'
 import './index.css'
+import 'semantic-ui-css/semantic.min.css'
 
 const App = () => {
   return(
     <div>
-      <div className="title">Deep Cell Image Rendering Prototype</div>
-      <ImageUpload />
-      <Card />
+      <HeaderPlugIcon /> 
+      <Card content=""/>
 
     </div>
   )
