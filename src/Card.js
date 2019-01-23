@@ -1,16 +1,20 @@
 import React from 'react';
 import ImageUpload from './ImageUpload';
+import { Grid, Segment } from 'semantic-ui-react'
 
-// const style = {
-//   'box-shadow: none'
-// }
+
+// const divStyle = {
+//   margin: '50px',
+//   padding: '50px',
+//   color: 'pink'
+// };
 
 const Card = (props) => {
   return (
-    <div className="ui card card-border">
-        <ImageUpload />
+    <Grid className="ui card card-border">
+        <ImageUpload/>
 
-    </div>
+    </Grid>
   )
 }
 

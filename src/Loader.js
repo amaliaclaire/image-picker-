@@ -5,8 +5,10 @@ const LoaderStuff = (props) =>
    (
      <Segment>
    <Dimmer active>
-   <Loader inverted>Loading</Loader>
+   <Loader inverted size="massive">Loading</Loader>
    </Dimmer>
+   <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+   <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
    <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
    </Segment>
 )
