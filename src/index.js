@@ -4,7 +4,7 @@ import { Header, Icon, Grid, Segment } from 'semantic-ui-react'
 import HeaderPlugIcon from './HeaderPlugIcon'
 import ImageUpload from './ImageUpload';
 import Card from './Card'
-import GridPadded from './GridPadded'
+// import LoaderStuff from './Loader'
 import './index.css'
 import 'semantic-ui-css/semantic.min.css'
 
