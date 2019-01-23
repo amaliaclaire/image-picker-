@@ -49,9 +49,8 @@ class ImageUpload extends React.Component {
                type="file"
                onChange={(e)=>this._handleImageChange(e)} />
            </form>
-         <div className="imgPreview">
-           {$imagePreview}
-         </div>
+
+         <Image className="imgPreview"> {$imagePreview} </Image>
        </div>
 
      )
