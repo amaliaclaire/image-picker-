@@ -11,8 +11,14 @@ import { Grid, Segment } from 'semantic-ui-react'
 
 const Card = (props) => {
   return (
-    <Grid className="ui card card-border">
-        <ImageUpload/>
+    <Grid columns='equal' className="ui card ui center aligned grid">
+
+
+      <Grid.Row>
+        <Grid.Column>
+          <ImageUpload/>
+        </Grid.Column>
+      </Grid.Row>
 
     </Grid>
   )
