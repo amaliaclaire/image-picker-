@@ -1,6 +1,35 @@
-.input {
-  background-color: pink;
+/* basics  */
+
+* {
+  margin: 0;
 }
+
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+body {
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
+.container {
+  height: 100%;
+
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -142px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
 
 .fileInput {
   border-bottom: 4px solid black;
@@ -21,10 +50,29 @@
   border-top: 1px solid black;
   border-left: 1px solid black;
 }
-
+/* 
 div.previewComponent {
   border-bottom: 0 none !important;
   box-shadow: none;
   background-color: white;
   position: absolute;
+} */
+
+
+/* footer */
+
+
+.site-footer .page-wrap:after {
+  /* .push must be the same height as footer */
+	height: 200px;
+}
+
+.site-footer {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  padding-top: 5em;
+
 }

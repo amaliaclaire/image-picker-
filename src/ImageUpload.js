@@ -43,7 +43,6 @@ class ImageUpload extends React.Component {
      }
 
      return (
-       <div>
          <div className="previewComponent">
              <Form onSubmit={(e)=>this._handleSubmit(e)}>
                <Input className="fileInput text container"
@@ -52,8 +51,6 @@ class ImageUpload extends React.Component {
              </Form>
            <Image className="imgPreview"> {$imagePreview} </Image>
          </div>
-       </div>
-
      )
    }
  }

@@ -10,9 +10,16 @@ import 'semantic-ui-css/semantic.min.css'
 
 const App = () => {
   return(
-    <div>
-      <HeaderPlugIcon />
-      <Card content=""/>
+    <div className="container">
+      <div className="header">
+        <div className="body">
+          <HeaderPlugIcon />
+          <Card content=""/>
+        </div> 
+        <footer className="site-footer">
+          Sticky footer
+        </footer>
+      </div>
     </div>
   )
 };
