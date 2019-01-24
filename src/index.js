@@ -15,9 +15,8 @@ const App = () => {
         <div className="body">
           <HeaderPlugIcon />
           <Card content=""/>
-        </div> 
+        </div>
         <footer className="site-footer">
-          Sticky footer
         </footer>
       </div>
     </div>

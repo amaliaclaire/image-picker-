@@ -1,5 +1,7 @@
 import React from 'react';
 import { Input, Grid, Segment, Image, Form } from 'semantic-ui-react'
+import LoaderStuff from './Loader'
+
 
 
 class ImageUpload extends React.Component {
@@ -50,6 +52,11 @@ class ImageUpload extends React.Component {
                  onChange={(e)=>this._handleImageChange(e)} />
              </Form>
            <Image className="imgPreview"> {$imagePreview} </Image>
+           { this.state.file ? null : <LoaderStuff />
+
+
+           }
+        
          </div>
      )
    }

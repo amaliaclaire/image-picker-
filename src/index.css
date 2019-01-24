@@ -17,6 +17,9 @@ body {
 
 .container {
   height: 100%;
+  overflow: hidden;
+  display: block;
+  padding-bottom: 100px;
 
 }
 
@@ -39,24 +42,26 @@ body {
   position: absolute;
 }
 
-.imgPreview {
+/* .imgPreview {
   text-align: center;
-  margin: 5px 15px;
   height: 245px;
   width: 326px;
+
 
   border-bottom: 4px solid black;
   border-right: 4px solid black;
   border-top: 1px solid black;
   border-left: 1px solid black;
-}
-/* 
-div.previewComponent {
-  border-bottom: 0 none !important;
-  box-shadow: none;
-  background-color: white;
-  position: absolute;
+  margin: 5px 15px;
+  margin: 10px 10px;
+  text-align: center;
 } */
+
+div.previewText {
+  text-align: center;
+  padding-left: 3em;
+  font-style: italic;
+}
 
 
 /* footer */
@@ -72,7 +77,8 @@ div.previewComponent {
   position: absolute;
   width: 100%;
   bottom: 0;
-  height: 50px;
-  padding-top: 5em;
+  height: 30px;
+  padding-top: 3em;
+  font-color: white;
 
 }
